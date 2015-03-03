@@ -1,0 +1,150 @@
+@import 'colors';
+
+$sidebarWidth: 200px;
+$sidebarWidthSmall: 120px;
+$footerHeight: 40px;
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: $cNavBg;
+  font-size: rem-calc(14);
+  color: $cText;
+}
+
+.row {
+  background: none;
+}
+
+header, footer {
+  ul {
+    margin: 0;
+    li {
+      list-style: none;
+    }
+  }
+}
+
+h1,h2,h3,h4 {
+  font-family: "Segoe UI Light", 'Helvetica Neue', Helvetica, Arial, sans-serif;;
+  color: $cHeader;
+}
+
+h1 {
+  margin-top: emCalc(16);
+}
+h4 {
+  margin-bottom: 0;
+}
+
+section h2 {
+  color: $cSecondaryHeader;
+}
+section h4 {
+  color: $tertiaryHeader;
+}
+
+body > .wrapper {
+  //min-height: 100%;
+  //margin-bottom: -$footerHeight;
+}
+
+header {
+
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.4);
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+}
+
+.top-bar {
+  .logo {
+    vertical-align: middle;
+    display: inline-block;
+    height: 29px;
+    width: 109px;
+    background: url('/img/logoWhite.png') no-repeat;
+  }
+  background: $cDarkHeaderBg;
+
+}
+
+.top-bar.expanded .title-area {
+  background: $cDarkHeaderBg;
+}
+
+.row.full-width {
+  width: 100%;
+  max-width: 100%;
+}
+
+@media #{$medium-up} {
+  header {
+    position: absolute;
+    ul.right {
+      margin-right: rem-calc(60);
+    }
+  }
+}
+
+.logoWhite {
+  background: url('/img/logoWhite.png') no-repeat;
+  width: 109px;
+}
+
+.logoBlack {
+  background: url('/img/logoBlack.png') no-repeat;
+  width: 116px;
+}
+
+.logoBlack, .logoWhite {
+  display: inline-block;
+  height: 29px;
+}
+
+section[role="main"] {
+  padding-top: $topbar-height;
+}
+
+footer {
+  line-height: $footerHeight - 20px;
+  padding: 10px 0;
+  background: $cFooter;
+  color: $cFooterText;
+  p {
+    margin: 0;
+    font-size: rem-calc(12);
+  }
+}
+
+.border-radius-top {
+  border-top-left-radius: 3px !important;
+  border-top-right-radius: 3px !important;
+}
+
+.border-radius-bottom {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+section[role="main"] {
+  form {
+    input, select, div[editable] span, label {
+      font-size: rem-calc(12);
+    }
+  }
+}
+
+.dataTables_wrapper {
+  input, select {
+    width: auto;
+    display: inline-block;
+  }
+}
+
+ul.bl {
+  margin: 0;
+  li {
+    list-style: none;
+    margin: 0;
+    padding: rem-calc(4);
+  }
+}

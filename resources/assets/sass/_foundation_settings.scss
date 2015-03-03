@@ -1,0 +1,50 @@
+@import '../../../public/vendor/foundation/scss/foundation/functions';
+
+$row-width: rem-calc(960px);
+$column-gutter: rem-calc(25);
+$paragraph-font-size: rem-calc(13);
+$small-range: (0em, 50em);
+$medium-range: (50.063em, 64em);
+
+
+$include-open-sans: false !default;
+$topbar-bg-color: $cDarkHeaderBg;
+$topbar-link-bg-hover: lighten($cDarkHeaderBg, 10);
+$topbar-height: rem-calc(45);
+
+/* forms */
+$input-font-size: rem-calc(14);
+$legend-bg: none;
+$form-spacing: rem-calc(12);
+
+/* panels */
+$panel-bg: #fff;
+
+/* buttons */
+$button-med: rem-calc(9);
+$button-lrg: rem-calc(11);
+$button-font-med: rem-calc(12);
+$button-font-lrg: rem-calc(14);
+
+$table-row-font-color: $cText;
+
+$side-nav-list-margin: rem-calc(0 0 0 0);
+$side-nav-padding: rem-calc(0);
+$side-nav-link-color: $cNavTextColor;
+
+
+@import '../../../public/vendor/foundation/scss/foundation/components/grid';
+@import "../../../public/vendor/foundation/scss/foundation/components/top-bar";
+@import "../../../public/vendor/foundation/scss/foundation/components/type";
+@import "../../../public/vendor/foundation/scss/foundation/components/tables";
+@import "../../../public/vendor/foundation/scss/foundation/components/button-groups";
+@import "../../../public/vendor/foundation/scss/foundation/components/buttons";
+@import "../../../public/vendor/foundation/scss/foundation/components/dropdown";
+@import "../../../public/vendor/foundation/scss/foundation/components/dropdown-buttons";
+@import "../../../public/vendor/foundation/scss/foundation/components/clearing";
+@import "../../../public/vendor/foundation/scss/foundation/components/visibility";
+@import "../../../public/vendor/foundation/scss/foundation/components/forms";
+@import "../../../public/vendor/foundation/scss/foundation/components/panels";
+@import "../../../public/vendor/foundation/scss/foundation/components/reveal";
+@import "../../../public/vendor/foundation/scss/foundation/components/alert-boxes";
+@import "../../../public/vendor/foundation/scss/foundation/components/side-nav";

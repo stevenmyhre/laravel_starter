@@ -1,0 +1,101 @@
+@charset "UTF-8";
+@import '../../../public/vendor/foundation/scss/normalize';
+@import 'colors';
+@import 'foundation_settings';
+@import 'layout';
+
+
+#login {
+  img {
+    margin-bottom: 12px;
+  }
+}
+
+section[role="auth"] {
+  color: #ddd;
+  a {
+    color: inherit;
+    font-size: rem-calc(12);
+  }
+  a:hover {
+    color: $secondary-color;
+  }
+  display: table;
+  height: 100%;
+  width: 100%;
+  > .wrapper {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+  }
+  ul {
+    list-style-type: none;
+    li {
+
+    }
+  }
+  input {
+    margin: 0;
+    height: 50px;
+    box-shadow: none;
+  }
+  button {
+    width: 100%;
+  }
+}
+
+.toggle-sidebar {
+  text-align: center;
+  border-bottom: $cNavBorderBottomHover 2px dotted !important;
+}
+
+.sidebar {
+
+  width: 100%;
+  background: $cNavBg;
+  //overflow: auto;
+  color: $cNavTextColor;
+
+  @media #{$medium-up} {
+    width: $sidebarWidth;
+    height: 100%;
+    float: left;
+  }
+
+  a {
+    color: inherit;
+    display: block;
+    &:hover {
+      color: inherit;
+    }
+  }
+}
+
+section.content {
+  @media #{$medium-up} {
+    margin-left: $sidebarWidth;
+    min-height: 750px;
+  }
+  background: $cDashboardBg;
+  overflow: hidden;
+  &.loading:after {
+    content: '';
+    position: fixed;
+    top: 0;
+    right:0;
+    left: 0;
+    bottom: 0;
+    @media #{$medium-up} {
+      margin-left: $sidebarWidth;
+    }
+    background: rgba(255,255,255,0.5) url('/img/ajax-loader.gif') no-repeat center center
+  }
+}
+
+.dataTables_wrapper {
+  min-height: 450px;
+}
+
+table.dataTable tbody th, table.dataTable tbody td {
+  padding: 5px 8px;
+}
